@@ -50,9 +50,17 @@ export interface Match {
 
 // 排行榜条目接口
 export interface LeaderboardEntry {
-  player: Player;
-  rating: EloRating;
-  rank: number;
+  playerId: string;
+  playerName: string;
+  rating: number;
+  gamesPlayed: number;
+  wins: number;
+  losses: number;
+  draws: number;
+  winRate: number;
+  tier: string;
+  tierColor: string;
+  lastUpdated: Date;
 }
 
 // 表单数据类型
